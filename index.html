@@ -1,261 +1,10 @@
-<tr>
-                            <td>Ajit</td>
-                            <td class="amount">₹ 4,895</td>
-                            <td><!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rooftop Water Tank Repair - Expense Report</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            overflow: hidden;
-        }
-        
-        .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 40px;
-            text-align: center;
-        }
-        
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        
-        .header p {
-            font-size: 1.1em;
-            opacity: 0.9;
-        }
-        
-        .content {
-            padding: 40px;
-        }
-        
-        .section {
-            margin-bottom: 40px;
-        }
-        
-        .section-title {
-            font-size: 1.8em;
-            color: #667eea;
-            margin-bottom: 20px;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 10px;
-        }
-        
-        .info-box {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            border-left: 5px solid #667eea;
-        }
-        
-        .info-box h3 {
-            color: #333;
-            margin-bottom: 10px;
-            font-size: 1.2em;
-        }
-        
-        .info-box p {
-            color: #666;
-            line-height: 1.6;
-        }
-        
-        .warning-box {
-            background: #fff3cd;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            border-left: 5px solid #ffc107;
-        }
-        
-        .warning-box h3 {
-            color: #856404;
-            margin-bottom: 10px;
-            font-size: 1.2em;
-        }
-        
-        .warning-box p {
-            color: #856404;
-            line-height: 1.6;
-        }
-        
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            border-radius: 10px;
-            overflow: hidden;
-        }
-        
-        thead {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-        
-        th {
-            padding: 15px;
-            text-align: left;
-            font-weight: 600;
-            font-size: 1.1em;
-        }
-        
-        td {
-            padding: 15px;
-            border-bottom: 1px solid #e0e0e0;
-        }
-        
-        tbody tr:hover {
-            background: #f5f5f5;
-            transition: background 0.3s;
-        }
-        
-        tbody tr:last-child td {
-            border-bottom: none;
-        }
-        
-        .amount {
-            font-weight: 600;
-            color: #667eea;
-        }
-        
-        .total-row {
-            background: #f0f4ff !important;
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-        
-        .total-row td {
-            border-top: 3px solid #667eea;
-            padding: 20px 15px;
-        }
-        
-        .category-header {
-            background: #e8eaf6 !important;
-            font-weight: bold;
-            color: #5c6bc0;
-        }
-        
-        .highlight {
-            background: #fff3cd;
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 5px solid #ffc107;
-            margin: 20px 0;
-        }
-        
-        .highlight h3 {
-            color: #856404;
-            margin-bottom: 10px;
-        }
-        
-        .payment-status {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        
-        .flat-card {
-            background: white;
-            border: 2px solid #e0e0e0;
-            border-radius: 10px;
-            padding: 20px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .flat-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-        }
-        
-        .flat-card h4 {
-            color: #333;
-            margin-bottom: 15px;
-            font-size: 1.2em;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 8px;
-        }
-        
-        .flat-card p {
-            margin-bottom: 8px;
-            font-size: 0.95em;
-        }
-        
-        .paid {
-            color: #28a745;
-            font-weight: 600;
-        }
-        
-        .pending {
-            color: #dc3545;
-            font-weight: 600;
-        }
-        
-        .footer {
-            background: #f8f9fa;
-            padding: 20px;
-            text-align: center;
-            color: #666;
-            font-size: 0.9em;
-        }
-        
-        @media print {
-            body {
-                background: white;
-            }
-            .container {
-                box-shadow: none;
-            }
-            .header {
-                background: #667eea;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 1.8em;
-            }
-            
-            .content {
-                padding: 20px;
-            }
-            
-            table {
-                font-size: 0.9em;
-            }
-            
-            th, td {
-                padding: 10px;
-            }
-            
-            .payment-status {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -274,109 +23,113 @@
             <div class="section">
                 <h2 class="section-title">🔧 Labour & Materials Cost Analysis</h2>
                 
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px;">
-                    <div>
+                <div style="margin-bottom: 30px;">
+                    <div style="margin-bottom: 30px;">
                         <h3 style="color: #5c6bc0; margin-bottom: 15px;">👷 Total Labour Charges</h3>
-                        <table>
+                        <div class="table-container">
+                            <table class="table-responsive-stack" style="min-width: 500px;" role="table" aria-label="Labour Charges Breakdown">
                             <thead>
                                 <tr>
-                                    <th>Labour Type</th>
-                                    <th>Amount (₹)</th>
+                                    <th scope="col">Labour Type</th>
+                                    <th scope="col">Amount (₹)</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Plumber Labour</td>
-                                    <td class="amount">₹ 6,500</td>
+                                    <td data-label="Labour Type">Plumber Labour</td>
+                                    <td data-label="Amount (₹)" class="amount">₹ 6,500</td>
                                 </tr>
                                 <tr>
-                                    <td>Tiles Labour (2 Masons)</td>
-                                    <td class="amount">₹ 3,800</td>
+                                    <td data-label="Labour Type">Tiles Labour (2 Masons)</td>
+                                    <td data-label="Amount (₹)" class="amount">₹ 3,800</td>
                                 </tr>
                                 <tr>
-                                    <td>General Labour (2 Masons, 2 Labourers + Tank Cleaning)</td>
-                                    <td class="amount">₹ 3,700</td>
+                                    <td data-label="Labour Type">General Labour (2 Masons, 2 Labourers + Tank Cleaning)</td>
+                                    <td data-label="Amount (₹)" class="amount">₹ 3,700</td>
                                 </tr>
                                 <tr>
-                                    <td>Advance Cash for Tiles Labour</td>
-                                    <td class="amount">₹ 500</td>
+                                    <td data-label="Labour Type">Advance Cash for Tiles Labour</td>
+                                    <td data-label="Amount (₹)" class="amount">₹ 500</td>
                                 </tr>
                                 <tr>
-                                    <td>Advance Paid for Food</td>
-                                    <td class="amount">₹ 500</td>
+                                    <td data-label="Labour Type">Advance Paid for Food</td>
+                                    <td data-label="Amount (₹)" class="amount">₹ 500</td>
                                 </tr>
                                 <tr>
-                                    <td>Waterproofing Labour Paint</td>
-                                    <td class="amount">₹ 1,000</td>
+                                    <td data-label="Labour Type">Waterproofing Labour Paint</td>
+                                    <td data-label="Amount (₹)" class="amount">₹ 1,000</td>
                                 </tr>
                                 <tr>
-                                    <td>Electrician Charges</td>
-                                    <td class="amount">₹ 1,000</td>
+                                    <td data-label="Labour Type">Electrician Charges</td>
+                                    <td data-label="Amount (₹)" class="amount">₹ 1,000</td>
                                 </tr>
                                 <tr>
-                                    <td>Labour Food</td>
-                                    <td class="amount">₹ 100</td>
+                                    <td data-label="Labour Type">Labour Food</td>
+                                    <td data-label="Amount (₹)" class="amount">₹ 100</td>
                                 </tr>
                                 <tr class="total-row">
-                                    <td><strong>TOTAL LABOUR COST</strong></td>
-                                    <td class="amount">₹ 17,100</td>
+                                    <td data-label="Labour Type"><strong>TOTAL LABOUR COST</strong></td>
+                                    <td data-label="Amount (₹)" class="amount">₹ 17,100</td>
                                 </tr>
                             </tbody>
                         </table>
+                        </div>
                     </div>
                     
                     <div>
                         <h3 style="color: #5c6bc0; margin-bottom: 15px;">🛠️ Materials & Items Cost</h3>
-                        <table>
+                        <div class="table-container">
+                            <table class="table-responsive-stack" style="min-width: 500px;" role="table" aria-label="Materials and Items Cost Breakdown">
                             <thead>
                                 <tr>
-                                    <th>Category</th>
-                                    <th>Amount (₹)</th>
+                                    <th scope="col">Category</th>
+                                    <th scope="col">Amount (₹)</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Tiles & White Cement</td>
-                                    <td class="amount">₹ 4,240</td>
+                                    <td data-label="Category">Tiles & White Cement</td>
+                                    <td data-label="Amount (₹)" class="amount">₹ 4,240</td>
                                 </tr>
                                 <tr>
-                                    <td>Cement (Total 6 Bags)</td>
-                                    <td class="amount">₹ 1,300</td>
+                                    <td data-label="Category">Cement (Total 6 Bags)</td>
+                                    <td data-label="Amount (₹)" class="amount">₹ 1,300</td>
                                 </tr>
                                 <tr>
-                                    <td>Sand (Badarpur - 35 Ft)</td>
-                                    <td class="amount">₹ 3,100</td>
+                                    <td data-label="Category">Sand (Badarpur - 35 Ft)</td>
+                                    <td data-label="Amount (₹)" class="amount">₹ 3,100</td>
                                 </tr>
                                 <tr>
-                                    <td>Waterproofing Chemicals (Dr Fixit, URP 301, ACC)</td>
-                                    <td class="amount">₹ 2,750</td>
+                                    <td data-label="Category">Waterproofing Chemicals (Dr Fixit, URP 301, ACC)</td>
+                                    <td data-label="Amount (₹)" class="amount">₹ 2,750</td>
                                 </tr>
                                 <tr>
-                                    <td>Tools (Trowels, Spade, Brushes)</td>
-                                    <td class="amount">₹ 980</td>
+                                    <td data-label="Category">Tools (Trowels, Spade, Brushes)</td>
+                                    <td data-label="Amount (₹)" class="amount">₹ 980</td>
                                 </tr>
                                 <tr>
-                                    <td>Hardware for Tank Fittings (Nipples, Covers, Elbows, Pipes)</td>
-                                    <td class="amount">₹ 8,130</td>
+                                    <td data-label="Category">Hardware for Tank Fittings (Nipples, Covers, Elbows, Pipes)</td>
+                                    <td data-label="Amount (₹)" class="amount">₹ 8,130</td>
                                 </tr>
                                 <tr>
-                                    <td>Electrical Items (Sheets, PVC Box, Sockets, Wires)</td>
-                                    <td class="amount">₹ 2,560</td>
+                                    <td data-label="Category">Electrical Items (Sheets, PVC Box, Sockets, Wires)</td>
+                                    <td data-label="Amount (₹)" class="amount">₹ 2,560</td>
                                 </tr>
                                 <tr>
-                                    <td>Transport</td>
-                                    <td class="amount">₹ 150</td>
+                                    <td data-label="Category">Transport</td>
+                                    <td data-label="Amount (₹)" class="amount">₹ 150</td>
                                 </tr>
                                 <tr>
-                                    <td>Alfi Bond for Tiles</td>
-                                    <td class="amount">₹ 100</td>
+                                    <td data-label="Category">Alfi Bond for Tiles</td>
+                                    <td data-label="Amount (₹)" class="amount">₹ 100</td>
                                 </tr>
                                 <tr class="total-row">
-                                    <td><strong>TOTAL MATERIALS COST</strong></td>
-                                    <td class="amount">₹ 22,560</td>
+                                    <td data-label="Category"><strong>TOTAL MATERIALS COST</strong></td>
+                                    <td data-label="Amount (₹)" class="amount">₹ 22,560</td>
                                 </tr>
                             </tbody>
                         </table>
+                        </div>
                     </div>
                 </div>
                 
@@ -407,215 +160,224 @@
                 <h2 class="section-title">💰 Expense Breakdown</h2>
                 
                 <h3 style="color: #5c6bc0; margin-top: 20px; margin-bottom: 15px;">🔨 Water Tank Rooftop Repair</h3>
-                <table>
+                <div class="table-container">
+                <table class="table-responsive-stack" role="table" aria-label="Water Tank Rooftop Repair Expenses">
                     <thead>
                         <tr>
-                            <th>Expense Type</th>
-                            <th>Amount (₹)</th>
-                            <th>Paid By</th>
+                            <th scope="col">Expense Type</th>
+                            <th scope="col">Amount (₹)</th>
+                            <th scope="col">Paid By</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Rough 18 Tiles + 5 Kg 315 Chemical + 1Kg White Cement</td>
-                            <td class="amount">₹ 4,240</td>
-                            <td>Kapil</td>
+                            <td data-label="Expense Type">Rough 18 Tiles + 5 Kg 315 Chemical + 1Kg White Cement</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 4,240</td>
+                            <td data-label="Paid By">Kapil</td>
                         </tr>
                         <tr>
-                            <td>3 Bags Cement</td>
-                            <td class="amount">₹ 750</td>
-                            <td>Rajeev</td>
+                            <td data-label="Expense Type">3 Bags Cement</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 750</td>
+                            <td data-label="Paid By">Rajeev</td>
                         </tr>
                         <tr>
-                            <td>Transport</td>
-                            <td class="amount">₹ 150</td>
-                            <td>Rajeev</td>
+                            <td data-label="Expense Type">Transport</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 150</td>
+                            <td data-label="Paid By">Rajeev</td>
                         </tr>
                         <tr>
-                            <td>Labour Food</td>
-                            <td class="amount">₹ 100</td>
-                            <td>Rajeev</td>
+                            <td data-label="Expense Type">Labour Food</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 100</td>
+                            <td data-label="Paid By">Rajeev</td>
                         </tr>
                         <tr>
-                            <td>3 Bags Cement + 25 Ft Badarpur (Sand) + Transport</td>
-                            <td class="amount">₹ 2,550</td>
-                            <td>Kapil</td>
+                            <td data-label="Expense Type">3 Bags Cement + 25 Ft Badarpur (Sand) + Transport</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 2,550</td>
+                            <td data-label="Paid By">Kapil</td>
                         </tr>
                         <tr>
-                            <td>2 Trowels + 1 Spade + 1 Waterproofing Paint Brush + 2 Floor Cleaning Wire Brushes</td>
-                            <td class="amount">₹ 980</td>
-                            <td>Rajeev</td>
+                            <td data-label="Expense Type">2 Trowels + 1 Spade + 1 Waterproofing Paint Brush + 2 Floor Cleaning Wire Brushes</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 980</td>
+                            <td data-label="Paid By">Rajeev</td>
                         </tr>
                         <tr>
-                            <td>10 Ft Badarpur (Sand) + Transport</td>
-                            <td class="amount">₹ 550</td>
-                            <td>Kapil</td>
+                            <td data-label="Expense Type">10 Ft Badarpur (Sand) + Transport</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 550</td>
+                            <td data-label="Paid By">Kapil</td>
                         </tr>
                         <tr>
-                            <td>LW Dr Fixit Chemical 10 Lit (Used with Cement) + 5 Lit URP 301 Chemical (Used for Waterproofing)</td>
-                            <td class="amount">₹ 2,550</td>
-                            <td>Kapil</td>
+                            <td data-label="Expense Type">LW Dr Fixit Chemical 10 Lit (Used with Cement) + 5 Lit URP 301 Chemical (Used for Waterproofing)</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 2,550</td>
+                            <td data-label="Paid By">Kapil</td>
                         </tr>
                         <tr>
-                            <td>Advance Cash for Tiles Labour</td>
-                            <td class="amount">₹ 500</td>
-                            <td>Kapil</td>
+                            <td data-label="Expense Type">Advance Cash for Tiles Labour</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 500</td>
+                            <td data-label="Paid By">Kapil</td>
                         </tr>
                         <tr>
-                            <td>Advance Paid for Food</td>
-                            <td class="amount">₹ 500</td>
-                            <td>Kapil</td>
+                            <td data-label="Expense Type">Advance Paid for Food</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 500</td>
+                            <td data-label="Paid By">Kapil</td>
                         </tr>
                         <tr>
-                            <td>Labour Cash (2 Masons, 2 Labourers) + 9 Water Tank Cleaning Labour</td>
-                            <td class="amount">₹ 3,700</td>
-                            <td>Kapil</td>
+                            <td data-label="Expense Type">Labour Cash (2 Masons, 2 Labourers) + 9 Water Tank Cleaning Labour</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 3,700</td>
+                            <td data-label="Paid By">Kapil</td>
                         </tr>
                         <tr>
-                            <td>ACC 8 Kg Waterproof Cement + Transport</td>
-                            <td class="amount">₹ 200</td>
-                            <td>Kapil</td>
+                            <td data-label="Expense Type">ACC 8 Kg Waterproof Cement + Transport</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 200</td>
+                            <td data-label="Paid By">Kapil</td>
                         </tr>
                         <tr>
-                            <td>Waterproofing Labour Paint</td>
-                            <td class="amount">₹ 1,000</td>
-                            <td>Bamrara Ji</td>
+                            <td data-label="Expense Type">Waterproofing Labour Paint</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 1,000</td>
+                            <td data-label="Paid By">Bamrara Ji</td>
                         </tr>
                         <tr>
-                            <td>Alfi Bond for Tiles</td>
-                            <td class="amount">₹ 100</td>
-                            <td>Kapil</td>
+                            <td data-label="Expense Type">Alfi Bond for Tiles</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 100</td>
+                            <td data-label="Paid By">Kapil</td>
                         </tr>
                         <tr>
-                            <td>Tiles Labour (2 Masons)</td>
-                            <td class="amount">₹ 3,800</td>
-                            <td>Kapil</td>
+                            <td data-label="Expense Type">Tiles Labour (2 Masons)</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 3,800</td>
+                            <td data-label="Paid By">Kapil</td>
                         </tr>
                         <tr>
-                            <td>Hardware Items for Tank Fittings</td>
-                            <td class="amount">₹ 3,200</td>
-                            <td>Rajeev</td>
+                            <td data-label="Expense Type">Hardware Items for Tank Fittings</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 3,200</td>
+                            <td data-label="Paid By">Rajeev</td>
                         </tr>
                         <tr>
-                            <td>Hardware (2 Elbows for Connections)</td>
-                            <td class="amount">₹ 170</td>
-                            <td>Kapil</td>
+                            <td data-label="Expense Type">Hardware (2 Elbows for Connections)</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 170</td>
+                            <td data-label="Paid By">Kapil</td>
                         </tr>
                         <tr>
-                            <td>Hardware Items (15 Tank Nipples, 9 Nipple End Closures)</td>
-                            <td class="amount">₹ 3,400</td>
-                            <td>Kapil</td>
+                            <td data-label="Expense Type">Hardware Items (15 Tank Nipples, 9 Nipple End Closures)</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 3,400</td>
+                            <td data-label="Paid By">Kapil</td>
                         </tr>
                         <tr>
-                            <td>Hardware Items (5 Tank Covers and 5 Elbows)</td>
-                            <td class="amount">₹ 740</td>
-                            <td>Kapil</td>
+                            <td data-label="Expense Type">Hardware Items (5 Tank Covers and 5 Elbows)</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 740</td>
+                            <td data-label="Paid By">Kapil</td>
                         </tr>
                         <tr>
-                            <td>Hardware Items (2 Elbows for Overflow Pipe, 5 ft CPVC Pipe)</td>
-                            <td class="amount">₹ 420</td>
-                            <td>Rajeev</td>
+                            <td data-label="Expense Type">Hardware Items (2 Elbows for Overflow Pipe, 5 ft CPVC Pipe)</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 420</td>
+                            <td data-label="Paid By">Rajeev</td>
                         </tr>
                         <tr>
-                            <td>Plumber Labour Charges (All 9 Tanks Fittings)</td>
-                            <td class="amount">₹ 6,500</td>
-                            <td>Kapil</td>
+                            <td data-label="Expense Type">Plumber Labour Charges (All 9 Tanks Fittings)</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 6,500</td>
+                            <td data-label="Paid By">Kapil</td>
                         </tr>
                         <tr class="total-row">
-                            <td>SUBTOTAL - Tank Repair</td>
-                            <td class="amount">₹ 36,100</td>
-                            <td>-</td>
+                            <td data-label="Expense Type">SUBTOTAL - Tank Repair</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 36,100</td>
+                            <td data-label="Paid By">-</td>
                         </tr>
                     </tbody>
                 </table>
+                </div>
                 
                 <h3 style="color: #5c6bc0; margin-top: 30px; margin-bottom: 15px;">⚡ Water Motor Electric Switches Placement Change</h3>
-                <table>
+                <div class="table-container">
+                <table class="table-responsive-stack" role="table" aria-label="Water Motor Electric Switches Expenses">
                     <thead>
                         <tr>
-                            <th>Expense Type</th>
-                            <th>Amount (₹)</th>
-                            <th>Paid By</th>
+                            <th scope="col">Expense Type</th>
+                            <th scope="col">Amount (₹)</th>
+                            <th scope="col">Paid By</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>3 Sheets + 3 PVC Box + 9 16 Amp Sockets</td>
-                            <td class="amount">₹ 2,400</td>
-                            <td>Kapil</td>
+                            <td data-label="Expense Type">3 Sheets + 3 PVC Box + 9 16 Amp Sockets</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 2,400</td>
+                            <td data-label="Paid By">Kapil</td>
                         </tr>
                         <tr>
-                            <td>10 Inch Cable Tie</td>
-                            <td class="amount">₹ 130</td>
-                            <td>Rajeev</td>
+                            <td data-label="Expense Type">10 Inch Cable Tie</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 130</td>
+                            <td data-label="Paid By">Rajeev</td>
                         </tr>
                         <tr>
-                            <td>3 Mt Copper Wire For Water Bells</td>
-                            <td class="amount">₹ 30</td>
-                            <td>Rajeev</td>
+                            <td data-label="Expense Type">3 Mt Copper Wire For Water Bells</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 30</td>
+                            <td data-label="Paid By">Rajeev</td>
                         </tr>
                         <tr>
-                            <td>Electrician Charges (All Three Boards and Sockets Moved Outside, Water Bell Wiring for All 9 Tanks, Power Cord Adjustments for All Meters Coming from Outside the Building)</td>
-                            <td class="amount">₹ 1,000</td>
-                            <td>Rajeev</td>
+                            <td data-label="Expense Type">Electrician Charges (All Three Boards and Sockets Moved Outside, Water Bell Wiring for All 9 Tanks, Power Cord Adjustments for All Meters Coming from Outside the Building)</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 1,000</td>
+                            <td data-label="Paid By">Rajeev</td>
                         </tr>
                         <tr class="total-row">
-                            <td>SUBTOTAL - Electrical Work</td>
-                            <td class="amount">₹ 3,560</td>
-                            <td>-</td>
+                            <td data-label="Expense Type">SUBTOTAL - Electrical Work</td>
+                            <td data-label="Amount (₹)" class="amount">₹ 3,560</td>
+                            <td data-label="Paid By">-</td>
                         </tr>
                     </tbody>
                 </table>
+                </div>
                 
-                <table style="margin-top: 30px;">
+                <div class="table-container">
+                <table class="table-responsive-stack" style="margin-top: 30px;" role="table" aria-label="Grand Total">
                     <tbody>
                         <tr class="total-row" style="background: #667eea !important; color: white;">
-                            <td style="font-size: 1.3em;">GRAND TOTAL</td>
-                            <td class="amount" style="color: white; font-size: 1.3em;">₹ 39,660</td>
-                            <td>-</td>
+                            <td data-label="Description" style="font-size: 1.3em;">GRAND TOTAL</td>
+                            <td data-label="Amount" class="amount" style="color: white; font-size: 1.3em;">₹ 39,660</td>
+                            <td data-label="Notes">-</td>
                         </tr>
                     </tbody>
                 </table>
+                </div>
+                </div>
             </div>
             
             <div class="section">
                 <h2 class="section-title">💳 Expense Summary by Person</h2>
-                <table>
+                <div class="table-container">
+                    <table class="table-responsive-stack" style="min-width: 600px;" role="table" aria-label="Expense Summary by Person">
                     <thead>
                         <tr>
-                            <th>Name</th>
-                            <th>Total Expenses Paid (₹)</th>
-                            <th>Funds Received from Others (₹)</th>
-                            <th>Net Out of Pocket (₹)</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Total Expenses Paid (₹)</th>
+                            <th scope="col">Funds Received from Others (₹)</th>
+                            <th scope="col">Net Out of Pocket (₹)</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Kapil</strong></td>
-                            <td class="amount">₹ 35,430</td>
-                            <td class="amount">₹ 24,000 (Sachin, Dheeraj, Bamrara Ji)</td>
-                            <td class="amount">₹ 11,430</td>
+                            <td data-label="Name"><strong>Kapil</strong></td>
+                            <td data-label="Total Expenses Paid (₹)" class="amount">₹ 35,430</td>
+                            <td data-label="Funds Received from Others (₹)" class="amount">₹ 24,000 (Sachin, Dheeraj, Bamrara Ji)</td>
+                            <td data-label="Net Out of Pocket (₹)" class="amount">₹ 11,430</td>
                         </tr>
                         <tr>
-                            <td><strong>Rajeev</strong></td>
-                            <td class="amount">₹ 3,230</td>
-                            <td class="amount">₹ 9,895 (Abhishek + Ajit)</td>
-                            <td class="amount">₹ -6,665 (Has ₹6,665 in hand)</td>
+                            <td data-label="Name"><strong>Rajeev</strong></td>
+                            <td data-label="Total Expenses Paid (₹)" class="amount">₹ 3,230</td>
+                            <td data-label="Funds Received from Others (₹)" class="amount">₹ 9,895 (Abhishek + Ajit)</td>
+                            <td data-label="Net Out of Pocket (₹)" class="amount">₹ -6,665 (Has ₹6,665 in hand)</td>
                         </tr>
                         <tr>
-                            <td><strong>Bamrara Ji</strong></td>
-                            <td class="amount">₹ 1,000</td>
-                            <td class="amount">₹ 0</td>
-                            <td class="amount">₹ 1,000</td>
+                            <td data-label="Name"><strong>Bamrara Ji</strong></td>
+                            <td data-label="Total Expenses Paid (₹)" class="amount">₹ 1,000</td>
+                            <td data-label="Funds Received from Others (₹)" class="amount">₹ 0</td>
+                            <td data-label="Net Out of Pocket (₹)" class="amount">₹ 1,000</td>
                         </tr>
                         <tr class="total-row">
-                            <td>TOTAL</td>
-                            <td class="amount">₹ 39,660</td>
-                            <td class="amount">₹ 33,895</td>
-                            <td class="amount">₹ 5,765</td>
+                            <td data-label="Name">TOTAL</td>
+                            <td data-label="Total Expenses Paid (₹)" class="amount">₹ 39,660</td>
+                            <td data-label="Funds Received from Others (₹)" class="amount">₹ 33,895</td>
+                            <td data-label="Net Out of Pocket (₹)" class="amount">₹ 5,765</td>
                         </tr>
                     </tbody>
                 </table>
+                </div>
             </div>
             
             <div class="highlight">
@@ -628,72 +390,74 @@
             
             <div class="section">
                 <h2 class="section-title">📊 Advance Payment Status</h2>
-                <table>
+                <div class="table-container">
+                    <table class="table-responsive-stack" style="min-width: 600px;" role="table" aria-label="Advance Payment Status">
                     <thead>
                         <tr>
-                            <th>Flat Owner</th>
-                            <th>Advance Paid (₹)</th>
-                            <th>Paid To</th>
-                            <th>Status</th>
+                            <th scope="col">Flat Owner</th>
+                            <th scope="col">Advance Paid (₹)</th>
+                            <th scope="col">Paid To</th>
+                            <th scope="col">Status</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Kapil</td>
-                            <td class="amount">₹ 8,000</td>
-                            <td>Self (Kapil)</td>
-                            <td><span class="paid">✓ Paid</span></td>
+                            <td data-label="Flat Owner">Kapil</td>
+                            <td data-label="Advance Paid (₹)" class="amount">₹ 8,000</td>
+                            <td data-label="Paid To">Self (Kapil)</td>
+                            <td data-label="Status"><span class="paid">✓ Paid</span></td>
                         </tr>
                         <tr>
-                            <td>Sachin</td>
-                            <td class="amount">₹ 8,000</td>
-                            <td>Kapil</td>
-                            <td><span class="paid">✓ Paid</span></td>
+                            <td data-label="Flat Owner">Sachin</td>
+                            <td data-label="Advance Paid (₹)" class="amount">₹ 8,000</td>
+                            <td data-label="Paid To">Kapil</td>
+                            <td data-label="Status"><span class="paid">✓ Paid</span></td>
                         </tr>
                         <tr>
-                            <td>Dheeraj</td>
-                            <td class="amount">₹ 8,000</td>
-                            <td>Kapil</td>
-                            <td><span class="paid">✓ Paid</span></td>
+                            <td data-label="Flat Owner">Dheeraj</td>
+                            <td data-label="Advance Paid (₹)" class="amount">₹ 8,000</td>
+                            <td data-label="Paid To">Kapil</td>
+                            <td data-label="Status"><span class="paid">✓ Paid</span></td>
                         </tr>
                         <tr>
-                            <td>Ajit</td>
-                            <td class="amount">₹ 4,895</td>
-                            <td>Rajeev</td>
-                            <td><span class="paid">✓ Paid</span></td>
+                            <td data-label="Flat Owner">Ajit</td>
+                            <td data-label="Advance Paid (₹)" class="amount">₹ 4,895</td>
+                            <td data-label="Paid To">Rajeev</td>
+                            <td data-label="Status"><span class="paid">✓ Paid</span></td>
                         </tr>
                         <tr>
-                            <td>Rajeev</td>
-                            <td class="amount">₹ 0</td>
-                            <td>-</td>
-                            <td><span class="pending">✗ Not Paid</span></td>
+                            <td data-label="Flat Owner">Rajeev</td>
+                            <td data-label="Advance Paid (₹)" class="amount">₹ 0</td>
+                            <td data-label="Paid To">-</td>
+                            <td data-label="Status"><span class="pending">✗ Not Paid</span></td>
                         </tr>
                         <tr>
-                            <td>Abhishek</td>
-                            <td class="amount">₹ 5,000</td>
-                            <td>Rajeev</td>
-                            <td><span class="paid">✓ Paid</span></td>
+                            <td data-label="Flat Owner">Abhishek</td>
+                            <td data-label="Advance Paid (₹)" class="amount">₹ 5,000</td>
+                            <td data-label="Paid To">Rajeev</td>
+                            <td data-label="Status"><span class="paid">✓ Paid</span></td>
                         </tr>
                         <tr>
-                            <td>Bamrara Ji</td>
-                            <td class="amount">₹ 8,000</td>
-                            <td>Kapil</td>
-                            <td><span class="paid">✓ Paid</span></td>
+                            <td data-label="Flat Owner">Bamrara Ji</td>
+                            <td data-label="Advance Paid (₹)" class="amount">₹ 8,000</td>
+                            <td data-label="Paid To">Kapil</td>
+                            <td data-label="Status"><span class="paid">✓ Paid</span></td>
                         </tr>
                         <tr>
-                            <td>Reema Ji</td>
-                            <td class="amount">₹ 0</td>
-                            <td>-</td>
-                            <td><span class="pending">✗ Not Paid</span></td>
+                            <td data-label="Flat Owner">Reema Ji</td>
+                            <td data-label="Advance Paid (₹)" class="amount">₹ 0</td>
+                            <td data-label="Paid To">-</td>
+                            <td data-label="Status"><span class="pending">✗ Not Paid</span></td>
                         </tr>
                         <tr class="total-row">
-                            <td>TOTAL ADVANCE</td>
-                            <td class="amount">₹ 42,000</td>
-                            <td>-</td>
-                            <td>-</td>
+                            <td data-label="Flat Owner">TOTAL ADVANCE</td>
+                            <td data-label="Advance Paid (₹)" class="amount">₹ 42,000</td>
+                            <td data-label="Paid To">-</td>
+                            <td data-label="Status">-</td>
                         </tr>
                     </tbody>
                 </table>
+                </div>
             </div>
             
             <div class="section">
